@@ -12,10 +12,12 @@ describe('demoqa form', () => {
       PracticeForm.emailInput.type("name@example.com");
       PracticeForm.genderRadio.check("Other");
       PracticeForm.mobileInput.type("1234567890");
+
       PracticeForm.dateInput.click();
-      PracticeForm.dateWidgetPickerMonth.select(1);
+      PracticeForm.dateWidgetPickerMonth.select("February");
       PracticeForm.dateWidgetPickerYear.select("1930");
       PracticeForm.dateWidgetPickerDay(28).click();
+
       PracticeForm.subjectInput.type("Economics{enter}");
       PracticeForm.hobbiesCheckbox.check("3");
       PracticeForm.imageUploadInput.selectFile("cypress/files/banana.jpg");
